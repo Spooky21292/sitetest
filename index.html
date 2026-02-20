@@ -7,62 +7,58 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-blobs" aria-hidden="true">
-    <span class="blob blob-1"></span>
-    <span class="blob blob-2"></span>
-    <span class="blob blob-3"></span>
-  </div>
+  <div class="container">
+    <main class="page fade-up">
+      <section class="panel">
+        <h1>Александр Шелевой</h1>
+        <p class="subtitle">Связь со мной</p>
 
-  <main class="page fade-up">
-    <section class="panel">
-      <h1>Александр Шелевой</h1>
-      <p class="subtitle">Связь со мной</p>
-
-      <div class="contacts">
-        <a
-          class="contact-card"
-          href="https://t.me/Spooky9999"
-          target="_blank"
-          rel="noopener"
-          aria-label="Открыть Telegram @Spooky9999"
-        >
-          <span class="icon" aria-label="Иконка Telegram">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M21.8 4.17a1 1 0 0 0-1.03-.12L2.65 11.27a1 1 0 0 0 .1 1.86l4.45 1.47 1.5 4.82a1 1 0 0 0 1.74.33l2.5-3.06 4.53 3.28a1 1 0 0 0 1.58-.56l3.26-14.2a1 1 0 0 0-.5-1.04ZM9.5 17.02l-.8-2.57 8.23-7.42-6.56 8.07-.87 1.92Zm8.9 1.03-3.8-2.75a1 1 0 0 0-1.36.17l-.87 1.06.72-1.58a1 1 0 0 0-.16-1.06l-4.52-1.5 11.8-4.7-1.81 10.36Z" fill="currentColor"/>
-            </svg>
-          </span>
-          <span class="contact-text">
-            <strong>Telegram</strong>
-            <span>@Spooky9999</span>
-          </span>
-        </a>
-
-        <div class="contact-card email-card" role="group" aria-label="Контактная карточка почты">
-          <a class="email-link" href="mailto:sashashelewou@gmail.com" aria-label="Отправить письмо на sashashelewou@gmail.com">
-            <span class="icon" aria-label="Иконка почты">
+        <div class="contacts">
+          <a
+            class="contact-card"
+            href="https://t.me/Spooky9999"
+            target="_blank"
+            rel="noopener"
+            aria-label="Открыть Telegram @Spooky9999"
+          >
+            <span class="icon" aria-label="Иконка Telegram">
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v.35L12 12 3 6.35V6Zm0 2.74V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.74l-8.4 5.95a1 1 0 0 1-1.2 0L3 8.74Z" fill="currentColor"/>
+                <path d="M21.8 4.17a1 1 0 0 0-1.03-.12L2.65 11.27a1 1 0 0 0 .1 1.86l4.45 1.47 1.5 4.82a1 1 0 0 0 1.74.33l2.5-3.06 4.53 3.28a1 1 0 0 0 1.58-.56l3.26-14.2a1 1 0 0 0-.5-1.04ZM9.5 17.02l-.8-2.57 8.23-7.42-6.56 8.07-.87 1.92Zm8.9 1.03-3.8-2.75a1 1 0 0 0-1.36.17l-.87 1.06.72-1.58a1 1 0 0 0-.16-1.06l-4.52-1.5 11.8-4.7-1.81 10.36Z" fill="currentColor"/>
               </svg>
             </span>
             <span class="contact-text">
-              <strong>Почта</strong>
-              <span id="emailValue">sashashelewou@gmail.com</span>
+              <strong>Telegram</strong>
+              <span>@Spooky9999</span>
             </span>
           </a>
 
-          <button id="copyEmailBtn" class="copy-btn" type="button" aria-label="Скопировать email">
-            Скопировать
-          </button>
+          <div class="contact-card email-card" role="group" aria-label="Контактная карточка почты">
+            <a class="email-link" href="mailto:sashashelewou@gmail.com" aria-label="Отправить письмо на sashashelewou@gmail.com">
+              <span class="icon" aria-label="Иконка почты">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v.35L12 12 3 6.35V6Zm0 2.74V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.74l-8.4 5.95a1 1 0 0 1-1.2 0L3 8.74Z" fill="currentColor"/>
+                </svg>
+              </span>
+              <span class="contact-text">
+                <strong>Почта</strong>
+                <span id="emailValue">sashashelewou@gmail.com</span>
+              </span>
+            </a>
+
+            <button id="copyEmailBtn" class="copy-btn" type="button" aria-label="Скопировать email">
+              Скопировать
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="footer fade-up delay">
-    © Александр Шелевой <span id="year"></span>
-  </footer>
+    <footer class="footer fade-up delay">
+      © Александр Шелевой <span id="year"></span>
+    </footer>
 
-  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true">Скопировано!</div>
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true">Скопировано!</div>
+  </div>
 
   <script src="script.js"></script>
 </body>
